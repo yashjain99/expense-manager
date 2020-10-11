@@ -1,0 +1,56 @@
+body {
+    background: linear-gradient(to right, #60FC87, #CEEE1B);
+}
+.display-grid {
+    display: grid;
+}
+.login-form {
+    width: 350px;
+    height: 350px;
+    padding: 25px;
+    font-size: 22px; 
+    font-weight: bold; 
+    color: black;
+    grid-template-columns: auto;
+    grid-row: auto auto auto auto auto auto;
+    grid-gap: 10px;
+    background-color: white;
+}
+.input-details {
+    height: 30px;
+    width: 95%;
+}
+.enquiry-check-button {
+    width: 50%;
+    height: 35px;
+    margin: 0 25%;
+    line-height: 35px;
+    background-color: #f04031;;
+    color: white;
+}
+.text-align-center {
+    text-align: center;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .login-form {
+        margin: 9.5% 10%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .login-form {
+        margin: 9.5% 20%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .login-form {
+        margin: 8% 25%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .login-form {
+        margin: 8.5% 35%;
+    }
+}
