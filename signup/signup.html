@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type = "text/css"  rel = "stylesheet" href = "signup.css"></link>
+  
+</head>
+<body>
+    
+    <div id = "adjust"></div>
+        <form id = "form">
+            <h1>Sign Up To Expense Manager</h1>
+            <div>
+                <label for = "name">Name</label>
+                <input type = text name = "name" minlength="4"/>
+            </div>
+            <div>
+                <label for = "mail">Email-Id</label>
+                <input type = "email" name = "mail" />
+            </div>
+            <div>
+                <label for = "password">Password</label>
+                <input type = password  name = "password" minlength="6"/>
+            </div>
+           <div id = "error"></div>
+            <div>
+            <input type = "submit" id = "sign" value = "Sign Up" >
+            </div>
+        </br>
+        <p>Already have an account ? <a href>Sign in</a></p>
+        </form>
+      
+        <script src = "signup.js"></script>
+   
+</body>
+</html>
