@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <link type = "text/css"  rel = "stylesheet" href = "login_style.css"></link>
+    </head>
+    <body>
+        <form>
+            <div class = "display-grid login-form">
+                <div class = "div-heading">LOGIN TO EXPENSE MANAGER</div>
+                <input class = "text-align-center" type = "text" placeholder = "Email" name = "email" required = "required"></input>
+                <div id = "wrong-email"></div>
+                <input class = "text-align-center" type = "password" placeholder = "Password" name = "password" required = "required" minlength = "6"></input>
+                <div id = "notify"></div>
+                <input class = "enquiry-check-button text-align-center cursor-pointer" name = "submit" type = "submit"></input>
+            </div>  
+        </form>
+        <script type = "text/javascript" src = "login.js"></script>
+    </body>
+</html>
