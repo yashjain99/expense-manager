@@ -1,0 +1,48 @@
+body {
+    margin:0;
+    padding:0;
+    background-image:linear-gradient(to right, #60fc87, #ceee1b); 
+    background-position: center;
+    background-size: cover;
+}
+  
+    #form{
+       
+        width:310px;
+       
+        padding:2%;
+        background-color:white;
+        margin:auto;
+        font-family:sans-serif;
+
+    }
+    #form > div{
+        padding:10px;
+        display: flex;
+        justify-content: center;
+       
+        
+    }
+    label,input {
+        margin-left: 10px;
+    }
+    #adjust {
+        margin-top: 100px;
+    }
+    #form > p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    #sign {
+        padding:3px;
+        background-image:linear-gradient(to right, #fc6076, #ffbe31);
+        border-radius:10px;
+        border:0;
+        min-width:80px;
+        
+    }
+    h1{
+        text-align: center;
+        font-size:22px;
+    }

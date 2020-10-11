@@ -4,57 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style type="text/css">
-    body {
-        margin:0;
-        padding:0;
-        background-image:linear-gradient(to right, #60fc87, #ceee1b); 
-        background-position: center;
-        background-size: cover;
-    }
-      
-        #form{
-           
-            width:310px;
-           
-            padding:2%;
-            background-color:white;
-            margin:auto;
-            font-family:sans-serif;
-
-        }
-        #form > div{
-            padding:10px;
-            display: flex;
-            justify-content: center;
-           
-            
-        }
-        label,input {
-            margin-left: 10px;
-        }
-        #adjust {
-            margin-top: 100px;
-        }
-        #form > p {
-            font-size: 10px;
-            text-align: center;
-        }
-
-        #sign {
-            padding:3px;
-            background-image:linear-gradient(to right, #fc6076, #ffbe31);
-            border-radius:10px;
-            border:0;
-            min-width:80px;
-            
-        }
-        h1{
-            text-align: center;
-            font-size:22px;
-        }
-        
-        </style>
+    <link type = "text/css"  rel = "stylesheet" href = "signup.css"></link>
+  
 </head>
 <body>
     
@@ -73,7 +24,7 @@
                 <label for = "password">Password</label>
                 <input type = password  name = "password" minlength="6"/>
             </div>
-           
+           <div id = "error"></div>
             <div>
             <input type = "submit" id = "sign" value = "Sign Up" >
             </div>
