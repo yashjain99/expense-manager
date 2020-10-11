@@ -9,7 +9,7 @@ localStorage.setItem(key, JSON.stringify(data))
 }
 
 window.addEventListener('load', function(){
-  alert('works')
+  //alert('works')
     arr = loadData('customerdetail') || []  
     var form = document.getElementById("form")
     form.addEventListener("submit",handleData)
@@ -31,7 +31,8 @@ function handleData(){
       arr.push({name:name, email: mail, password:pass  });
      }
      else {
-         alert("User Email Already exists try Login")
+         var error = document.getElementById('err')
+         error.textContent = "Already User Exists";
      }
     document.getElementById("form").reset()
    
