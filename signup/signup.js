@@ -3,7 +3,6 @@ function loadData(key){
     return JSON.parse(localStorage.getItem(key))
 }
 
-
 function saveData(key,data){
 localStorage.setItem(key, JSON.stringify(data))
 }
@@ -13,8 +12,6 @@ window.addEventListener('load', function(){
     arr = loadData('customerdetail') || []  
     var form = document.getElementById("form")
     form.addEventListener("submit",handleData)
-   
-    
 })
 
 function handleData(){
@@ -27,18 +24,20 @@ function handleData(){
     var found = arr.some(function(el){
         return el.email === mail;
   });
-    if (!found) { 
-      arr.push({name:name, email: mail, password:pass  });
+    if (!found) {
+      var payload = {
+            "name":name, 
+            "email": mail, 
+            "password":pass, 
+            "transactions": []
+      }
+      arr.push(payload);
+      location.assign("../login/login.html");
      }
      else {
        var errmsg = document.getElementById("error")
          errmsg.textContent = "User Already exists"
      }
     document.getElementById("form").reset()
-   
-   
     saveData('customerdetail', arr) 
-    //console.log(arr)
 }
-
-
