@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link type = "text/css"  rel = "stylesheet" href = "dashboard_style.css"></link>
+    </head>
+    <body>
+
+        <div class = "display-grid account-summary">
+            <div id = "t_income" class = "text-align-center">
+                <div>TOTAL INCOME</div>
+                <div id = "total_incone"></div>
+            </div>
+            <div id = "t_expense" class = "text-align-center">
+                <div>TOTAL EXPENSE</div>
+                <div id = "total_expenses"></div>
+            </div>
+            <div id = "t_balance" class = "text-align-center">
+                <div>BALANCE</div>
+                <div id = "total_balance"></div>
+            </div>
+        </div>
+
+        <div class = "display-grid show-enter-transaction-blocks">
+            <div class = "show-transaction">
+                <div class = "div-heading text-align-center">LATEST TRANSACTION</div><br/>
+                <table class = "text-align-center">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Type</th>
+                            <th>Ammount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class = "enter-transaction">
+                <div>
+                    <form>
+                        <div class = "display-grid entry-form">
+                            <div class = "div-heading text-align-center">ENTER TRANSACTION</div>
+                            <label>Title:
+                                <input class = "input-details-title" type = "text" name = "title" required = "required"></input>
+                            </label>
+                            <div> Type:
+                                <label>
+                                    <input type = "radio" name = "type" value = "credit"></input>
+                                    Credit
+                                </label>
+                                <label>
+                                    <input type = "radio" name = "type" value = "debit">
+                                    Debit
+                                </label>
+                            </input>
+                            </div>
+                            <label>Ammount:
+                                <input class = "input-details-ammount" type = "text" name = "ammount" required = "required"></input>
+                            </label>
+                            <input class = "enquiry-check-button text-align-center cursor-pointer" name = "submit" type = "submit"></input>
+                        </div>  
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class = "ledger-button text-align-center cursor-pointer">LEDGER</div>
+
+        <script type = "text/javascript" src = "dashboard.js"></script>
+    </body>
+</html>
