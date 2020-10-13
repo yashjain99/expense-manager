@@ -15,17 +15,16 @@ function enterLoginDetails() {
         //console.log(arr[i].email)
        if(email === arr[i].email && password === arr[i].password) {
            check = true;
+           localStorage.setItem("dataKey", i);
            break;
        }
     }
     if(check){
-        console.log("VAlid")
-
-        location.assign("file:///C:/Users/lenovo/Desktop/Masai_pair_peoject/expense-manager/signup/signup.html")
+        console.log("Valid");
+        location.assign("../dashboard/dashboard.html");
     }else {
         var showError = document.getElementById('notify')
         showError.textContent = "Username or Password Incorrect"
     }
-    
 }
 
