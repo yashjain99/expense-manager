@@ -1,4 +1,4 @@
-var key = localStorage.getItem("dataKey");
+var key = JSON.parse(localStorage.getItem("dataKey"));
 
 function loadData(key){
     return JSON.parse(localStorage.getItem(key))
@@ -63,8 +63,11 @@ function latestTransactions() {
     var customerdetail = loadData("customerdetail");
     var tbody = document.querySelector("tbody");
 
-    for(var i = 0; i < 5; i++){
-        for(index in customerdetail[key].transactions[i]){
+    for(var i = customerdetail[key].transaction- 1; i >= 0; i--){
+        if(i === customerdetail[key].transaction - 5){
+            break;
+        }
+      
             var tr = document.createElement("tr");
             var td1 = document.createElement("td");
             var td2 = document.createElement("td");
@@ -78,7 +81,7 @@ function latestTransactions() {
             tr.append(td2);
             tr.append(td3);
             tbody.append(tr);
-        }
+        
     }
 }
 
