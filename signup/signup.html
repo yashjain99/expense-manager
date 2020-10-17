@@ -14,22 +14,22 @@
             <h1>Sign Up To Expense Manager</h1>
             <div>
                 <label for = "name">Name</label>
-                <input type = text name = "name" minlength="4"/>
+                <input type = text name = "name" minlength="4" required = "required"/>
             </div>
             <div>
                 <label for = "mail">Email-Id</label>
-                <input type = "email" name = "mail" />
+                <input type = "email" name = "mail"  required = "required"/>
             </div>
             <div>
                 <label for = "password">Password</label>
-                <input type = password  name = "password" minlength="6"/>
+                <input type = password  name = "password" minlength="6" required = "required"/>
             </div>
            <div id = "error"></div>
             <div>
             <input type = "submit" id = "sign" value = "Sign Up" >
             </div>
         </br>
-        <p>Already have an account ? <a href>Sign in</a></p>
+        <p>Already have an account ? <a href = "../login/login.html">Sign in</a></p>
         </form>
       
         <script src = "signup.js"></script>
