@@ -1,0 +1,104 @@
+body {
+    background: linear-gradient(to right, #60FC87, #CEEE1B);
+}
+.display-grid {
+    display: grid;
+}
+.account-summary{
+    grid-gap: 20px;
+    margin: 25px;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 100px;
+}
+.text-align-center {
+    text-align: center;
+}
+#t_income {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #f04031;
+    line-height: 100px;
+}
+#t_expense {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #f04031;
+    line-height: 100px;
+}
+#t_balance {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #f04031;
+    line-height: 100px;
+}
+.show-enter-transaction-blocks {
+    margin: 50px 50px;
+    width: 80%;
+    grid-template-columns: 40% 30%;
+    grid-template-rows: 310px;
+    grid-gap: 30%;
+}
+.show-transaction {
+    grid-area: 1/1/2/2;
+    padding: 10px;
+    /* width: 500px; */
+}
+.enter-transaction {
+    grid-area: 1/2/2/3;
+    /* width: 200px; */
+}
+.div-heading {
+    font-size: 22px; 
+    font-weight: bold; 
+    color: black;
+}
+.entry-form {
+    width: 350px;
+    height: 250px;
+    padding: 25px;
+    font-size: 22px; 
+    font-weight: bold; 
+    color: black;
+    grid-template-columns: auto;
+    grid-row: auto auto auto auto auto auto;
+    grid-gap: 10px;
+}
+.input-details {
+    height: 30px;
+    width: 95%;
+}
+.enquiry-check-button {
+    width: 50%;
+    height: 35px;
+    margin: 0 20%;
+    line-height: 22px;
+    background-color: #f04031;
+    color: white;;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+label {
+    font-size: 20px;
+}
+td,th {
+    height: 40px;
+    width: 150px;
+    border: 1px solid black;
+}
+.input-details-title {
+    height: 20px;
+    width: 60%;
+}
+.input-details-ammount {
+    height: 20px;
+    width: 48%
+}
+.ledger-button {
+    width: 20%;
+    height: 45px;
+    margin: 0 40%;
+    line-height: 45px;
+    background-color: #f04031;;
+    color: white;;
+}
