@@ -1,0 +1,30 @@
+body {
+    background: linear-gradient(to right, #60FC87, #CEEE1B);
+}
+table{
+    margin: 50px auto 0;
+}
+td,th{
+    border: 1px solid black;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+}
+#flex{
+    margin:5px;
+    display:flex;
+    justify-content: center;
+}
+button{
+    width: 180px;
+    height: 55px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    color: white;
+    padding:2px;
+    border:0;
+    font-family:sans-serif;
+    background-image:linear-gradient(to right, #fc6076, #ffbe31);
+    margin: 50px 20px 0;
+}
