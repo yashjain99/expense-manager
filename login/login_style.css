@@ -24,15 +24,21 @@ body {
     width: 50%;
     height: 35px;
     margin: 0 25%;
-    line-height: 35px;
-    background-color: #f04031;;
+    line-height: 30px;
+    background-image:linear-gradient(to right, #fc6076, #ffbe31);
     color: white;
+    border-radius: 5px;
+    border: 0;
 }
 .text-align-center {
     text-align: center;
 }
 .cursor-pointer {
     cursor: pointer;
+}
+#para {
+    font-size: 15px;
+    font-weight: normal;
 }
 @media only screen and (max-width: 600px) {
     .login-form {
