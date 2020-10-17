@@ -7,6 +7,7 @@ function loadData(key){
 window.addEventListener("load", function(){
     var form = document.querySelector("form");
     form.addEventListener("submit",enterTransaction);
+    latestTransactions();
 })
 
 function enterTransaction() {
@@ -27,7 +28,6 @@ function enterTransaction() {
     console.log(customerdetail[key].transactions);
     localStorage.setItem("customerdetail", JSON.stringify(customerdetail));
     displayAccountSummary();
-    latestTransactions();
 }
 
 function displayAccountSummary() {
@@ -60,14 +60,16 @@ function displayAccountSummary() {
 }
 
 function latestTransactions() {
+    var key = JSON.parse(localStorage.getItem("dataKey"));
+
     var customerdetail = loadData("customerdetail");
     var tbody = document.querySelector("tbody");
 
-    for(var i = customerdetail[key].transaction- 1; i >= 0; i--){
-        if(i === customerdetail[key].transaction - 5){
+    for(var i = customerdetail[key].transactions.length- 1; i >= 0; i--){
+        if(i === customerdetail[key].transactions.length - 5){
             break;
         }
-      
+        
             var tr = document.createElement("tr");
             var td1 = document.createElement("td");
             var td2 = document.createElement("td");
@@ -89,5 +91,15 @@ var ledger = document.querySelector(".ledger-button");
 ledger.addEventListener("click", goToLedger);
 
 function goToLedger() {
-    location.assign("../login/login.html");
+    location.assign("../ledger/ledger.html");
 }
+
+function tableUpdate() {
+    var tbody = document.querySelector("tbody");
+    tbody.textContent = "";
+    latestTransactions();
+    // console.log(tbody)
+}
+
+var form = document.querySelector("form");
+form.addEventListener("submit", tableUpdate);

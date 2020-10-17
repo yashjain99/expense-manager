@@ -16,19 +16,19 @@ body {
 #t_income {
     font-size: 25px;
     font-weight: bold;
-    background-color: #f04031;
+    background-image:linear-gradient(to right, #fc6076, #ffbe31);
     line-height: 100px;
 }
 #t_expense {
     font-size: 25px;
     font-weight: bold;
-    background-color: #f04031;
+    background-image:linear-gradient(to right, #fc6076, #ffbe31);
     line-height: 100px;
 }
 #t_balance {
     font-size: 25px;
     font-weight: bold;
-    background-color: #f04031;
+    background-image:linear-gradient(to right, #fc6076, #ffbe31);
     line-height: 100px;
 }
 .show-enter-transaction-blocks {
@@ -72,8 +72,12 @@ body {
     height: 35px;
     margin: 0 20%;
     line-height: 22px;
-    background-color: #f04031;
-    color: white;;
+    background-image:linear-gradient(to right, #fc6076, #ffbe31);
+    border:0;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    border-radius: 5px;
 }
 .cursor-pointer {
     cursor: pointer;
@@ -99,6 +103,10 @@ td,th {
     height: 45px;
     margin: 0 40%;
     line-height: 45px;
-    background-color: #f04031;;
-    color: white;;
+    background-image:linear-gradient(to right, #fc6076, #ffbe31);
+    border:0;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
 }
