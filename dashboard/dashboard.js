@@ -8,6 +8,7 @@ window.addEventListener("load", function(){
     var form = document.querySelector("form");
     form.addEventListener("submit",enterTransaction);
     latestTransactions();
+    displayAccountSummary()
 })
 
 function enterTransaction() {
