@@ -32,7 +32,7 @@ function handleData(){
             "transactions": []
       }
       arr.push(payload);
-      location.assign("../login/login.html");
+      location.assign("../index.html");
      }
      else {
        var errmsg = document.getElementById("error")
