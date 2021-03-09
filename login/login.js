@@ -21,7 +21,7 @@ function enterLoginDetails() {
     }
     if(check){
         console.log("Valid");
-        location.assign("../dashboard/dashboard.html");
+        location.assign("./dashboard/dashboard.html");
     }else {
         var showError = document.getElementById('notify')
         showError.textContent = "Username or Password Incorrect"
